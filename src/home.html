@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Scrimba Chatbot</title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <main>
+            <section class="chatbot-container">
+                <div class="chatbot-header">
+                    <img src="images/logo-scrimba.svg" class="logo">
+                    <p class="sub-heading">Knowledge Bank</p>
+                </div>
+                <div class="chatbot-conversation-container" id="chatbot-conversation-container">
+                </div>
+                <form id="form" class="chatbot-input-container">
+                    <input name="user-input" type="text" id="user-input" required>
+                    <button id="submit-btn" class="submit-btn">
+                            <img
+                                src="images/send.svg"   
+                                class="send-btn-icon"
+                            >
+                    </button>
+                </form>
+            </section>
+        </main>
+        <script src="home.js" type="module"></script>
+    </body>
+</html>
