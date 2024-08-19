@@ -1,7 +1,7 @@
 
 # OpenAI & LangChain-Powered Chatbot Support System with Socket.io
 
-![Chatbot](/images/chatbot.png)
+![Chatbot](/src/public/images/chatbot.png)
 
 ## Overview
 
@@ -69,20 +69,18 @@ This project is a real-time chatbot support system powered by **OpenAI** and **L
 
 ## Project Structure
 
-\`\`\`bash
-├── src
-│   ├── public
-│   │   ├── home.js      # Client-side JavaScript logic for handling chat
-│   │   ├── index.css    # Styles for the chat interface
-│   │   └── images       # Static images used in the UI
-│   ├── utils
-│   │   ├── retriever.js # Logic for retrieving and processing data
-│   │   └── filecombiner.js # Combines and formats data for the chatbot
-│   └── index.js         # Main server file
-├── .env                 # Environment variables (API keys, etc.)
-├── package.json         # Node.js dependencies and scripts
-└── README.md            # Project documentation
-\`\`\`
+![Structure](/src/public/images/file_structure.png)
+
+## Incremental Stages
+
+The files named 1_* to 6_* under the src/utils directory represent incremental stages of the project's development. Each stage introduces new functionality or improvements. Only the final stage (6_agent.js) is needed for the project to work.
+
+- 1_supabase-uploader.js: Handles uploading data to Supabase.
+- 2_stndalone-question.js: Processes standalone questions.
+- 3_retrieval.js: Manages data retrieval.
+- 4_runnableseq.js: Implements runnable sequences.
+- 5_addrunnableseqchallenge.js: Adds runnable sequence challenges.
+- 6_agent.js: Integrates an AI agent for generating responses.
 
 ## Future Enhancements
 
